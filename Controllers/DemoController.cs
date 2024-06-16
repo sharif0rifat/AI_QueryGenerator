@@ -19,7 +19,7 @@ private static readonly HttpClient client = new HttpClient();
     [Route("CompleteSentence")]
     public async Task<IActionResult> CompleteSentence( string prompt)
     {
-        string apiKey = "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";
+        string apiKey = "xxx";
         string endpoint = "https://api.openai.com/v1/chat/completions";
         
         client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
